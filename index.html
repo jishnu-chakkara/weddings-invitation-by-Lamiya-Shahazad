@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -717,10 +716,7 @@ footer {
   .whatsapp-btn { margin-left: 0; margin-top: 12px; }
 }
 
-
-/* Opening screen */
 /* ─── OPENING SCREEN ─── */
-
 .opening-screen{
   position:fixed;
   inset:0;
@@ -743,8 +739,6 @@ footer {
   pointer-events:none;
 }
 
-/* BG IMAGE */
-
 .opening-bg{
   position:absolute;
   inset:0;
@@ -755,8 +749,6 @@ footer {
 
   animation:bgZoom 12s ease-in-out infinite alternate;
 }
-
-/* DARK OVERLAY */
 
 .opening-overlay{
   position:absolute;
@@ -773,8 +765,6 @@ footer {
   backdrop-filter:blur(1px);
 }
 
-/* CONTENT */
-
 .opening-inner{
   position:relative;
   z-index:5;
@@ -786,8 +776,6 @@ footer {
 
   animation:fadeUp 1.4s ease;
 }
-
-/* BISMILLAH */
 
 .opening-bismillah{
   font-family:'Amiri', serif;
@@ -807,8 +795,6 @@ footer {
   letter-spacing:1px;
 }
 
-/* SUBTEXT */
-
 .opening-subtext{
   margin-top:10px;
 
@@ -823,8 +809,6 @@ footer {
 
   animation:fadeIn 1s 2.8s forwards;
 }
-
-/* BUTTON */
 
 #openInviteBtn{
   margin-top:34px;
@@ -888,8 +872,6 @@ footer {
   z-index:2;
 }
 
-/* FLOATING PARTICLES */
-
 .opening-particles{
   position:absolute;
   inset:0;
@@ -909,19 +891,13 @@ footer {
   animation:floatParticle linear infinite;
 }
 
-/* DESKTOP */
-
 @media (min-width:769px){
-
   .opening-bismillah{
     font-size:58px;
     line-height:1.8;
     min-height:100px;
   }
-
 }
-
-/* ANIMATIONS */
 
 @keyframes bgZoom{
   from{
@@ -929,17 +905,6 @@ footer {
   }
   to{
     transform:scale(1.15);
-  }
-}
-
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
   }
 }
 
@@ -974,9 +939,12 @@ footer {
 </style>
 </head>
 <body>
+
+<!-- ─── BACKGROUND MUSIC ─── -->
 <audio id="bg-music" loop>
-    <source src="song.mp3" type="audio/mpeg">
+  <source src="song.mp3" type="audio/mpeg">
 </audio>
+
 <canvas id="petal-canvas"></canvas>
 
 <!-- OPENING SCREEN -->
@@ -996,7 +964,7 @@ footer {
     </div>
 
     <button id="openInviteBtn">
-      Open Invitation
+      <span>Open Invitation</span>
     </button>
 
   </div>
@@ -1043,19 +1011,16 @@ footer {
     <div class="parents-grid">
       <div class="parents-side">
         <p class="parents-side-label">Bride's Parents</p>
-         <p class="parents-side-label">Groom's Parents</p>
         <p class="parent-role">ttoli masken,Chalappuram 
 Calicut
 </p>
-        <p class="parent-name">Muhammed Ashraf Ittoli <br>S/O <span lass="parent-late">(Late) P.M. Shaik Dawood Koya &(Late) Ittoli Sulaikha
+        <p class="parent-name">Muhammed Ashraf Ittoli <br>S/O <span class="parent-late">(Late) P.M. Shaik Dawood Koya &(Late) Ittoli Sulaikha
 </span>
 </p>
-        <!-- <p class="parent-role">Father</p> -->
-        <p class="parent-name" style="margin-top:12px">Rasiya Tharola<br><br>D/O <span lass="parent-late">(Late) K.V. Koyakutty &
+        <p class="parent-name" style="margin-top:12px">Rasiya Tharola<br><br>D/O <span class="parent-late">(Late) K.V. Koyakutty &
 (Late) Aysha Tharola
 </span>
 </p>
-        <!-- <p class="parent-role">Mother</p> -->
       </div>
 
       <div class="parents-and">
@@ -1072,12 +1037,9 @@ Thiruvambady </p>
         <p class="parent-name">Yusuf K.R</p>
         <p class="parent-role">Father <span class="parent-late">(Late)</span></p>
         <p class="parent-name" style="margin-top:12px">Shareefa P.M</p>
-        
       </div>
     </div>
   </section>
-
-
 
   <!-- DETAILS -->
   <section class="details-section">
@@ -1109,8 +1071,7 @@ Thiruvambady </p>
         <div class="event-card-icon">◈</div>
         <p class="event-card-label">Venue</p>
         <p class="event-card-value">
-          <span class="highlight">Kallyanappura Auditorium
-</span><br>
+          <span class="highlight">Kallyanappura Auditorium</span><br>
           Payyanakkal, Kozhikode
         </p>
       </div>
@@ -1201,14 +1162,12 @@ Thiruvambady </p>
     font-size:1.1rem; color:var(--amber-soft); opacity:0; transition: opacity 0.5s;"></p>
 </section>
 
-
   <!-- GALLERY -->
   <section class="gallery-section reveal">
     <p class="section-label">Captured Moments</p>
     <h2 class="section-title">Our Story</h2>
     <div class="gold-line"></div>
     <div class="gallery-grid">
-      
       <div class="gallery-item">
         <img src="bg.jpeg" alt="Our Moment">
       </div>
@@ -1229,8 +1188,6 @@ Thiruvambady </p>
   <p class="footer-names">Lamiya <span class="footer-amp">&</span> Shahazad</p>
   <p class="footer-meta">4 July 2026 · Kallyanappura Payyanakkal, Kozhikode<br>19 Muharram, 1448 AH</p>
 </footer>
-
-<audio id="bg-music" loop><source src="song.mp3" type="audio/mpeg"></audio>
 
 <script>
 /* ─── RAIN ─── */
@@ -1280,45 +1237,6 @@ function tick(){
 }
 setInterval(tick,1000); tick();
 
-/* ─── AUTO SCROLL ─── */
-let isAutoScrolling = false;
-
-function autoScroll(targetScroll = window.innerHeight * 4, duration = 8000) {
-  if (isAutoScrolling) return;
-  
-  isAutoScrolling = true;
-  const startScroll = window.scrollY;
-  const startTime = Date.now();
-  
-  function easeInOutQuad(t) {
-    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  }
-  
-  function scroll() {
-    const elapsed = Date.now() - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const easeProgress = easeInOutQuad(progress);
-    
-    window.scrollY = startScroll + (targetScroll - startScroll) * easeProgress;
-    window.scrollTo(0, window.scrollY);
-    
-    if (progress < 1) {
-      requestAnimationFrame(scroll);
-    } else {
-      isAutoScrolling = false;
-    }
-  }
-  
-  requestAnimationFrame(scroll);
-}
-
-/* Start auto-scroll 5 seconds after page load */
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    autoScroll(window.innerHeight * 3.5, 12000);
-  }, 5000);
-});
-
 /* ─── PETALS ─── */
 (function(){
   const cv=document.getElementById('petal-canvas'),ctx=cv.getContext('2d');
@@ -1364,8 +1282,6 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 /* ─── MUSIC ─── */
 document.addEventListener('click',()=>document.getElementById('bg-music').play().catch(()=>{}),{once:true});
 
-
-
 /* ─── RSVP ─── */
 function handleRSVP(choice) {
   const msg = document.getElementById('rsvp-msg');
@@ -1385,10 +1301,9 @@ function handleRSVP(choice) {
   }
   msg.style.opacity = '1';
 }
+
 /* ─── OPENING SCREEN ─── */
-
 const text = "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ";
-
 const bismillahElement = document.getElementById("bismillahText");
 const openingScreen = document.getElementById("openingScreen");
 const openInviteBtn = document.getElementById("openInviteBtn");
@@ -1396,33 +1311,18 @@ const music = document.getElementById("bg-music");
 
 let index = 0;
 
-/* TYPE ANIMATION */
-
 function typeArabicText(){
-
   if(index < text.length){
-
     bismillahElement.textContent += text.charAt(index);
-
     index++;
-
     setTimeout(typeArabicText, 80);
-
   }
-
 }
 
-/* START TYPING */
-
 window.addEventListener("load", () => {
-
   typeArabicText();
-
   createParticles();
-
 });
-
-/* BUTTON CLICK */
 
 function openInvitation() {
   try {
@@ -1440,34 +1340,19 @@ function openInvitation() {
 
 openInviteBtn.addEventListener("click", openInvitation);
 
-/* FLOATING PARTICLES */
-
 function createParticles(){
-
   const container = document.getElementById("openingParticles");
 
   for(let i = 0; i < 28; i++){
-
     const particle = document.createElement("span");
-
     particle.style.left = Math.random() * 100 + "%";
-
-    particle.style.animationDuration =
-      (Math.random() * 10 + 8) + "s";
-
-    particle.style.animationDelay =
-      (Math.random() * 5) + "s";
-
+    particle.style.animationDuration = (Math.random() * 10 + 8) + "s";
+    particle.style.animationDelay = (Math.random() * 5) + "s";
     particle.style.opacity = Math.random();
-
-    particle.style.transform =
-      `scale(${Math.random() * 1.4 + 0.5})`;
-
+    particle.style.transform = `scale(${Math.random() * 1.4 + 0.5})`;
     container.appendChild(particle);
-
   }
-
-}  
+}
 </script>
 </body>
 </html>
