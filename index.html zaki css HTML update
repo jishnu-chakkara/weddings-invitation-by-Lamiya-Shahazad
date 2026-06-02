@@ -936,6 +936,85 @@ footer {
     opacity:0;
   }
 }
+  /* ─── BEST COMPLIMENTS ─── */
+
+.compliment-card{
+    max-width:700px;
+    margin:40px auto 0;
+    background:linear-gradient(
+      180deg,
+      rgba(26,43,68,0.95),
+      rgba(17,29,48,0.95)
+    );
+    border:1px solid var(--steel-blue);
+    border-radius:24px;
+    padding:45px 35px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+
+.compliment-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:2px;
+    background:linear-gradient(
+      to right,
+      transparent,
+      var(--amber-glow),
+      transparent
+    );
+}
+
+.compliment-card::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:2px;
+    background:linear-gradient(
+      to right,
+      transparent,
+      var(--amber-soft),
+      transparent
+    );
+}
+
+.compliment-icon{
+    font-size:2rem;
+    color:var(--amber-glow);
+    margin-bottom:25px;
+}
+
+.compliment-person{
+    padding:18px 0;
+    border-bottom:1px solid rgba(139,163,188,.15);
+}
+
+.compliment-person:last-child{
+    border-bottom:none;
+}
+
+.compliment-person strong{
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.8rem;
+    font-weight:400;
+    color:var(--cream);
+    letter-spacing:.03em;
+  }
+  @media (max-width:600px){
+    .compliment-card{
+        padding:35px 20px;
+    }
+
+    .compliment-person strong{
+        font-size:1.4rem;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1174,7 +1253,27 @@ Thiruvambady </p>
     </div>
   </section>
 
-</div>
+<section class="gallery-section reveal">
+    <p class="section-label">Best Compliments</p>
+    <h2 class="section-title">With Love and Duas from</h2>
+    <div class="gold-line"></div>
+
+    <div class="compliment-card">
+        <div class="compliment-icon">✦</div>
+
+        <div class="compliment-person">
+            <strong>Dr. Mohammed Shaheer Paleri</strong>
+        </div>
+
+        <div class="compliment-person">
+            <strong>Gazzala Tharola</strong>
+        </div>
+
+        <div class="compliment-person">
+            <strong>Mohammed Zaki</strong>
+        </div>
+    </div>
+</section>
 
 <!-- FOOTER -->
 <footer>
